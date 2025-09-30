@@ -1,6 +1,8 @@
 # GraphSim
 
-[![Build Status](https://travis-ci.org/marcusps/GraphSim.svg?branch=master)](https://travis-ci.org/marcusps/GraphSim)
+*History note:* The link to the software in ther original paper has gone dead long ago. Thankfully, in 2010, [Marcus P. da Silva](https://orcid.org/0000-0002-6641-8712) 
+rescued my code and gave it a new home on GitHub, [here](https://github.com/marcusps/GraphSim) and kept it maintained for a several years. I have now forked his repo to 
+my own GitHub are, so that I could update the code to make it run with Python 3. What follows is Marcus's original README file. --Simon
 
 This is a git repository for Simon Anders' library to simulate an important class of quantum circuits.
 
@@ -16,8 +18,8 @@ This code is not actively supported or maintained, but pull requests for minor b
 > For information about this package, please read
 > - the paper describing the algorithm:
 >      S. Anders, H. J. Briegel:
->      Fast Simulation of Stabilizer Circuits using a Graph State Formalism
->      quant-ph/0504117
+>      *Fast Simulation of Stabilizer Circuits using a Graph State Formalism*.
+>      arXiv:quant-ph/0504117, [Phys. Rev. A 73 (2006) 022334](https://doi.org/10.1103/PhysRevA.73.022334)
 > - the documentation of the C++ library in doc/html/index.html
 > - the documentation of the Python bindings in doc/graphsim_py.html
 > - the file COPYING for the text of the GPL
