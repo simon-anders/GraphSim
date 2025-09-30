@@ -23,6 +23,9 @@ OPTIMIZE=yes
 # 'gs', not 'all'
 SWIG=/usr/bin/swig
 
+# Python include directory for development headers
+PYTHON_INCLUDE=/usr/include/python3.10
+
 # Mathlink is a part of Mathematica. It is used here to compare the computation of
 # graphsim with Scott Aaronson's CHP program. If you do not want to do debugging
 # or checking, you do not need this. Put it to 'no'.
@@ -102,7 +105,7 @@ _graphsim.so: graphsim.o graphsim_wrap.o loccliff.o stabilizer.o
 	stabilizer.o ${MLLIB} -o _graphsim.so
  
 graphsim_wrap.o: graphsim_wrap.cxx
-	${CXX} ${CFLAGS} ${NOLINK} graphsim_wrap.cxx -I/usr/include/python2.7/
+	${CXX} ${CFLAGS} ${NOLINK} graphsim_wrap.cxx -I${PYTHON_INCLUDE}/
 
 loccliff.h: multtbl.tbl
 
@@ -123,7 +126,7 @@ doc/timestamp.dummy: graphsim.h loccliff.h stabilizer.h
 chp.py: _chp.so
 
 chp_wrap.o: CHP/chp_wrap.c
-	${CC} ${CFLAGS} ${NOLINK} CHP/chp_wrap.c -I/usr/include/python2.7/
+	${CC} ${CFLAGS} ${NOLINK} CHP/chp_wrap.c -I${PYTHON_INCLUDE}/
 
 chp_wrap.c: CHP/chp.i CHP/chp.h
 	${SWIG} -python CHP/chp.i
