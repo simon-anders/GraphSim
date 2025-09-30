@@ -2,7 +2,7 @@
 
 *History note:* The link to the software in ther original paper has gone dead long ago. Thankfully, in 2010, [Marcus P. da Silva](https://orcid.org/0000-0002-6641-8712) 
 rescued my code and gave it a new home on GitHub, [here](https://github.com/marcusps/GraphSim) and kept it maintained for a several years. I have now forked his repo to 
-my own GitHub are, so that I could update the code to make it run with Python 3. What follows is mostly Marcus's original README file. --Simon
+my own GitHub are, so that I could update the code to make it run with Python 3. What follows is mostly Marcus's original README file. --Simon, Sep 2025
 
 This is a git repository for Simon Anders' library to simulate an important class of quantum circuits.
 
